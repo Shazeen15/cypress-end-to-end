@@ -13,7 +13,7 @@ describe('test our form inputs', () => {
         //submit form
         cy.get('[type=checkbox]').check().should('be.checked');
         //checks that the submit effect works and sends conformation
-        cy.get('[data-cy=submit]').click()
+        cy.get('[data-cy=submit]').click();
         cy.get('pre').should('exist');
     });
 
